@@ -28,6 +28,11 @@ node {
         echo 'Deploying application'
     }
 
+    stage('Release') {
+        echo 'Promoting application to production release'
+        echo 'Tagging release version v1.0'
+    }
+
     stage('Monitoring') {
         echo 'Checking health endpoint'
     }
